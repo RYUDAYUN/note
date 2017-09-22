@@ -11,7 +11,7 @@
 >vector<자료형> 변수명
 <pre><code> vector< int> a(n);</code></pre>
 
-#####생성자
+##### 생성자
 형태|설명
 ----|----
 vector v| v는 빈컨테이너이다.
