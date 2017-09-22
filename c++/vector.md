@@ -1,14 +1,15 @@
-##C++  
-###vector에 대해서 알기
+## C++  
+### vector에 대해서 알기
 ---
-####vector
+#### vector
 - 대표적 시퀀스 컨테이너[^1]로 배열과 비슷하여 사용이 쉬움.
 - 동적배열
 - 임의 접근 반복자를 사용
 - 원소가 연속적으로 저장 => [],at 으로는 빠르나 insert(), erase(), push_back()등은 비효율적으로 동작
 
-#####형(type)
+##### 형(type)
 >vector<자료형> 변수명
+<pre><code> vector< int> a(n);</code></pre>
 
 #####생성자
 형태|설명
