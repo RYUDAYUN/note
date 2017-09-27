@@ -1,9 +1,9 @@
 # IoT networking in the IoT
 #### 2017 9월 25일
 ---
-###IoT : Internet는 TCP/IP사용 ,Things는 TCP/IP사용X->번역이 필요
+###  IoT : Internet는 TCP/IP사용 ,Things는 TCP/IP사용X->번역이 필요
 
-###Network Module
+### Network Module
 - WSN
   - Multi-hop communication
   - 무선의 특징
@@ -47,8 +47,39 @@
 - Flooding : broadcast로 통신, 데이터가 무선통신 범위에 퍼지게 됨
 - source Routing : 기본 가정은 각 노드가 ID가부여, 경로를 같이 부여 (패킷헤더안에)
 
+---
+#### 2017 9월 27일
 
 #### Route Establishment & Maintenance
 - Proactive (table-driven) : 주기적으로 무선적으로 테이블 만드는것.
 - Reactive (on-demend) : 테이블을 만드지 않는 것, Route discovery를 함. 경로를 먼저 찾음. 그 다음 경로를 통해서 전달
 - mixed : 위 두가지 섞은 것.
+
+
+#### Wireless Networking (Routing) in IoT
+1. Flooding :
+  만약 A가 H에게 전달하고 싶으면 broadcast함.(A가 보낸것임을 정보를 포함)
+2. Source Routing:
+  - 데이터를 보낼때 경로를 지정해서 보냄. (Broadcast)
+  - Dynamic Source Routing 리액티브 방식, 데이터를 보낼때 라우팅 테이블을 새로 만듦, Route discovery 과정을 통해서 결정 -> Delivery
+  - Route Discovery in DSR : 자기 아이디를 써나가면서 broadcast, RREQ를 받았으면 RREP를 보냄
+  - DSR 성능을 향상시키 위해서 Caching 사용
+  - AODV : RREQ를 먼저 보냄, 자기아이디를 추가적으로 넣어서 전달 X, S와 몇홉이 떨어져있는지 , 누구한테 받았는지  To S, 2 hop, via E
+4. IPv6 Routing Protocol for Low-Power and Lossy Networks
+  - RPL : "Ripple(잔물결)" routing protocol , DAG의 개념을 가지고 만듦.
+  - DIO 메세지를 broadcast 함. rank를 만듦.
+  > DAG : Directed Acyclic Graphs (방향성이 있는 싸이클없는 그래프)
+
+  - P2MP(Point-to-Multi-Point) for Downward traffic
+  - Point-to-Point(P2P) : Downward + Upward
+
+
+  #### Network Performance
+  - Power supply: 얼마나 에너지를 소모하게 하는가?(최소인게 좋음)
+  - Power Consumption
+  - Position of a gateway
+
+  #### Network Flow & Qos - aware Protocol
+
+  - Energy Aware Qos Routing Protocol : 라우팅의 배터리정보까지 포함해서 라우팅 경로를 짬.
+  
