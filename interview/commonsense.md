@@ -48,12 +48,12 @@
 
   ### RESTful하게 API를 디자인 한다는 것은 무엇을 의미?
   1. 리소스와 행위를 명시적이고 직관적으로 분리
-  - 리소스는 URI로 표현, 리소스가 가리키는 것은 명사로 표현
-  - 행위는 HTTP Method로 표현, GET(조회),POST(생성), PUT(기존 entity 전체 수정), PATCH(기존 entity 일부 수정), DELETE(삭제)
+    - 리소스는 URI로 표현, 리소스가 가리키는 것은 명사로 표현
+    - 행위는 HTTP Method로 표현, GET(조회),POST(생성), PUT(기존 entity 전체 수정), PATCH(기존 entity 일부 수정), DELETE(삭제)
   2. Message는 Header와 Body를 명확히 분리해서 사용
   3. API 버전을 관리
   4. 서버와 클라이언트가 같은 방식을 사용해서 요청하도록 함.
-  - URI가 플랫폼 중립적.
+    - URI가 플랫폼 중립적.
 
   ### 장점
   1. Open API 제공하기 쉽다.
