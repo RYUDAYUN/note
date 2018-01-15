@@ -1,7 +1,6 @@
 # Part 1-1 Development common sense
 
 ##  객체지향 프로그래밍(OOP)
----
 - 현실세계를 프로그래밍으로 옮겨와 프로그래밍 하는 것
 - 추상화 : 현실 세계의 사물을 객체라 보고 그 객체로부터 개발하고자 하는 애플레케이션에 필요한 특징을 뽑아와 프로그래밍 하는것
 - 장점 :
@@ -26,7 +25,6 @@
 
 
   ##  RESTful API
-  ---
   - REST ? REpresentation State Transfer의 약자.
   - 2000년도에 로이필딩이 웹(HTTP)의 장점을 최대한 활용할 수 있는 아키텍처로 REST를 발표.
   - Resource Oriented Architecture, API 설계의 중심에 자원(Resource)이 있고 HTTP Method를 통해 자원을 처리하도록 설계
@@ -69,7 +67,6 @@
   3. HTTP 통신 모델에 대해서만 지원
 
   ## TDD
-  ---
   Test-Driven Development(TDD)는 매우 짧은 개발 사이클의 반복에 의존하는 소프트웨어 개발 프로세스, 테스트가 코드 작성을 주도하는 개발 방식
 
   ### 단점
@@ -78,7 +75,6 @@
   3. 생각지도 못한 예외 케이스가 존재할 수 있다.
 
   ## 함수형 프로그래밍
-  ---
   - immutable data
   - first class citizen
 
@@ -105,7 +101,6 @@
   값들의 집합으로 볼 수 있으며 제공되는 함수형 메소드를 통해 데이터를 immutable하게 관리할 수 있음.
 
   ## MVC
-  ---
   - Controller(컨트롤러)
     - 일종의 조정자
     - 클라이언트의 요청을 받았을 때 실제 업무를 수행하는 모델 컴포넌트를 호출
